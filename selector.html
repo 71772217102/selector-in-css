@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>selector</title>
+    <style>
+        .top{
+            display: flex;
+            list-style-type: none;
+        }
+        .top li a{
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 30px;
+            color: black;
+        }
+        .top li a:hover{
+            color: brown;
+        }
+        
+        .down  {
+            display: none;
+            list-style-type: none;
+            position: absolute;
+            padding: 5px;
+            background-color: bisque;
+        }
+        
+        .top li:hover .down {
+            display: block;
+        }
+        .down li a{
+            color: brown;
+            display: block;
+        }
+        .down li a:hover{
+            color: hotpink;
+        }
+          
+    </style>
+</head>
+<body>
+    <nav>
+   <ul class="top">
+       <li><a href="#">Home</a></li>
+       <li>
+        <a href="#">About</a>
+        <ul class="down">
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Values</a></li>
+        </ul>
+       </li>
+       <li><a href="#">Services</a></li>
+       <li><a href="#">Contact</a></li>
+   </ul>
+</nav>
+
+</body>
+</html>
